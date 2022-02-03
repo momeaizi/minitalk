@@ -6,7 +6,7 @@
 /*   By: momeaizi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 16:05:32 by momeaizi          #+#    #+#             */
-/*   Updated: 2022/02/02 15:52:04 by momeaizi         ###   ########.fr       */
+/*   Updated: 2022/02/03 11:39:24 by momeaizi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "minitalk.h"
@@ -48,7 +48,7 @@ void	send(unsigned char *str)
 	while (str[i])
 		sig(str[i++], 0);
 	sig(str[i], 0);
-	usleep(150);
+	usleep((i + 1) * 100);
 }
 
 int	ft_atoi(char *str)

@@ -6,13 +6,13 @@
 /*   By: momeaizi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 15:33:22 by momeaizi          #+#    #+#             */
-/*   Updated: 2022/02/02 16:11:22 by momeaizi         ###   ########.fr       */
+/*   Updated: 2022/02/03 11:26:27 by momeaizi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk_bonus.h"
 
-void	ft_strcpy(unsigned char	*dst, unsigned char	*src, unsigned char c)
+void	ft(unsigned char *dst, unsigned char *src, unsigned char c)
 {
 	int	i;
 
@@ -50,7 +50,7 @@ unsigned char	*ft_strjoin(unsigned char c, unsigned char *str)
 		write(2, "ERROR!\n", 7);
 		return (0);
 	}
-	ft_strcpy(msg, str, c);
+	ft(msg, str, c);
 	if (str)
 		free(str);
 	return (msg);

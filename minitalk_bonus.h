@@ -6,7 +6,7 @@
 /*   By: momeaizi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 13:23:23 by momeaizi          #+#    #+#             */
-/*   Updated: 2022/02/02 15:58:11 by momeaizi         ###   ########.fr       */
+/*   Updated: 2022/02/03 11:26:01 by momeaizi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ void			sig_handler(int sig, siginfo_t *info, void *context);
 void			ft_putnbr(int pid);
 void			sig_handler(int sig, siginfo_t *info, void *context);
 unsigned char	*ft_strjoin(unsigned char c, unsigned char *str);
-void			ft_strcpy(unsigned char *dst, unsigned char     *src, unsigned char c);
+void			ft(unsigned char *dst, unsigned char *src, unsigned char c);
 
 #endif

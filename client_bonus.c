@@ -6,7 +6,7 @@
 /*   By: momeaizi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 15:33:07 by momeaizi          #+#    #+#             */
-/*   Updated: 2022/02/02 15:34:51 by momeaizi         ###   ########.fr       */
+/*   Updated: 2022/02/03 11:53:07 by momeaizi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	send(unsigned char *str)
 	while (str[i])
 		sig(str[i++], 0);
 	sig(str[i], 0);
-	usleep(150);
+	usleep((i + 1) * 100);
 }
 
 int	ft_atoi(char *str)
